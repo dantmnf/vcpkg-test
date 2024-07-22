@@ -13,6 +13,7 @@ jobs:
       - name: build
         shell: bash
         run: |
+          pwd
           ./vcpkg/vcpkg-bootstrap.sh
           ./vcpkg/vcpkg install abseil:x64-linux
       - name: collect logs
